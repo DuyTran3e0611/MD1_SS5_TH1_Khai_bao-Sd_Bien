@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<!--Cách 2: Tương tác với HTML thông qua DOM-->
+<label> Nhập số a: </label>
+<input type="number" id="numberA"><br><br>
+<label> Nhập số b: </label>
+<input type="number" id="numberB"><br><br>
+<button type="button" onclick="check()">Kiểm tra</button>
+
+<script>
+
+    function check(){
+        let so_A= document.getElementById('numberA').value;
+        console.log('Gia tri a: ',so_A );
+        let so_B= document.getElementById('numberB').value;
+        console.log('Gia tri b: ', so_B);
+        if (so_A%so_B==0){
+            alert('a là bội số của b');
+        }
+        else{
+            alert('a không phải là bội số của b');
+        }
+    }
+
+// Cách 1: Code bằng JS thuần
+
+//   let a;
+//   let b;
+//   a = prompt('Nhập giá trị a = ');
+//   console.log('Gia tri a = ',a)
+//   b = prompt('Nhập giá trị b = ');
+//   console.log('Gia tri b = ',b)
+// if (a%b==0){
+//   alert('a là bội số của b')
+// }
+// else{
+// alert ('a không phải là bội số của b')
+// }
+
+</script>
+
+
+
+</body>
+</html>
